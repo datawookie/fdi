@@ -10,7 +10,7 @@ fdi <- function(temperature, humidity, wind, days_rain, rain) {
   burn_factor <- temperature_factor - humidity_factor
   burn_index <- (burn_factor / 2 + humidity_factor) / 3.3;
 
-  wind_factor <- calculate_wind_factor(wind, burn_index)
+  wind_factor <- wind_factor(wind, burn_index)
 
   if ((rain > 0) && (rain < 2.7)) {
     if (days_rain == 1) fdi = wind_factor * 0.7
