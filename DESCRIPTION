@@ -1,0 +1,16 @@
+Package: fdi
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R:
+    c(person(given = c("Andrew", "B."),
+             family = "Collier",
+             role = c("aut", "cre", "cph"),
+             email = "andrew@fathomdata.dev"))
+Description: Calculate the Fire Danger Index (FDI).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
