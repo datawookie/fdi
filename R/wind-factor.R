@@ -1,7 +1,7 @@
 #' Calculate wind factor
 #'
 #' @param wind Wind speed (km/h).
-#' @param burn_index
+#' @param burn_index Burn Index
 wind_factor <- function(wind, burn_index) {
   if ((wind >=0) && (wind < 3)) {
     burn_index + 0

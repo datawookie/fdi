@@ -1,3 +1,17 @@
+#' Calculate the Fire Danger Index (FDI)
+#'
+#' @param temperature Temperature (°C)
+#' @param humidity Humidity (%)
+#' @param wind Wind speed (km/h)
+#' @param days_rain Days since last rain
+#' @param rain Amount of last rain (mm)
+#'
+#' @return A floating point number.
+#' @export
+#'
+#' @examples
+#' fdi(10, 50, 10, 1, 20)
+#' fdi(40, 30, 30, 15, 5)
 fdi <- function(temperature, humidity, wind, days_rain, rain) {
   # Calculate factors.
   temperature_factor <- (temperature - 3) * 6.7;
