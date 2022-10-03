@@ -11,8 +11,8 @@ Description: Calculate the Fire Danger Index (FDI).
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
