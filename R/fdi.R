@@ -314,9 +314,8 @@ fdi <- function(temperature, humidity, wind, days_rain, rain) {
     } else if (days_rain == 20) {
       fdi <- (wind_factor * 0.9)
     } else {
-      (days_rain > 20)
+      fdi <- (wind_factor * 1)
     }
-    fdi <- (wind_factor * 1)
   }
   round(fdi)
 }
